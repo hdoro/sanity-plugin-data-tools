@@ -1,0 +1,40 @@
+{
+  "name": "sanity-plugin-data-tools",
+  "version": "1.0.0",
+  "description": "Tools for manipulating datasets inside your studio",
+  "main": "lib/index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "clear-lib": "node clearLib.js",
+    "build": "npm run format && npm run clear-lib && tsc",
+    "dev": "tsc -w",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hdoro/sanity-plugin-data-tools.git"
+  },
+  "keywords": [
+    "sanity.io",
+    "sanity",
+    "data migration",
+    "sanity-plugin"
+  ],
+  "author": "Henrique Doro <opensource@hdoro.dev>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@sanity/ui": ">= 0.33.9",
+    "@sanity/base": ">= 2.5.0",
+    "@sanity/util": ">= 2.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
+  },
+  "bugs": {
+    "url": "https://github.com/hdoro/sanity-plugin-data-tools/issues"
+  },
+  "homepage": "https://github.com/hdoro/sanity-plugin-data-tools#readme"
+}
