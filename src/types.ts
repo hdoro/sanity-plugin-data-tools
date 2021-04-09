@@ -10,7 +10,10 @@ export interface SanityDoc extends BaseSanityDoc {
   [key: string]: any
 }
 
-export type UtilitiesT = 'changeDocumentType' | 'uploadDocument'
+export type UtilitiesT =
+  | 'changeDocumentType'
+  | 'uploadDocument'
+  | 'removeInvalidDocumentTypes'
 
 export interface TransactionResult {
   id: string

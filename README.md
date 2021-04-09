@@ -6,13 +6,17 @@ Tools for manipulating datasets inside your studio.
 
 ## TODO
 
+- dataset dropdown
 - Change document type utility
   - Diffing
     - react-diff-viewer: https://www.npmjs.com/package/react-diff-viewer
     - diff2html: https://www.npmjs.com/package/diff2html
 - Better UI
 - Utilities to add:
+  - Remove documents of _types not currently in the schema
   - Change object type name
+    - For Every document of <<type>> rename to <<key>> to ~~new value~~
+    - Option to keep old value
   - Change field name in all documents of type
   - Add value to all documents that match a criteria
 
